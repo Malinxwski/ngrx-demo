@@ -1,0 +1,22 @@
+<div class="main">
+  <div>
+    <button class="btn" #load (click)="loadNews()">Загрузить новости</button>
+
+
+    <div class="cards">
+      <div class="card" *ngFor="let item of result$ | async" >
+        <div class="card__image-wrapper">
+          <img class="card__image" [src]="item.image" alt="">
+        </div>
+        <p class="card__title">{{item.title}}</p>
+      </div>
+  </div>
+
+  </div>
+
+
+
+
+</div>
+
+
